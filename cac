@@ -1,0 +1,21 @@
+RUN COMMANDS
+make
+
+
+sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file \
+sha256 \
+~/kernel_keys/MOK.key \
+~/kernel_keys/MOK.crt \
+kobjx_slab_rcu_registry.ko
+
+sudo insmod kobjx_slab_rcu_registry.ko
+
+dmesg -w
+
+Check:
+
+cat /proc/kobjx_stats
+
+Remove:
+
+sudo rmmod kobjx_slab_rcu_registry

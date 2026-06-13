@@ -1,0 +1,2 @@
+/home/oem/linux_kernel_kobjex_rcu_correct/kobjx_slab_rcu_registry.o
+
