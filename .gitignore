@@ -1,0 +1,39 @@
+# Kernel build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+
+# Kernel build system files
+modules.order
+Module.symvers
+
+# Temporary files
+*.tmp
+*.cmd
+
+# Dependency files
+*.d
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# OS junk
+.DS_Store
+
+# Screenshots / images (optional)
+Screenshot*.png
+
+# Ignore notes / local files
+cac
+theory
+linkedin_blog_post
+
+
+
+# Keep these files
+!upgrade
+

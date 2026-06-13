@@ -1,1 +1,0 @@
-cmd_/home/oem/linux_kernel_kobjex_rcu_correct/Module.symvers := sed 's/\.ko$$/\.o/' /home/oem/linux_kernel_kobjex_rcu_correct/modules.order | scripts/mod/modpost -m -a  -o /home/oem/linux_kernel_kobjex_rcu_correct/Module.symvers -e -i Module.symvers   -T -
